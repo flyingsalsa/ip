@@ -18,7 +18,7 @@ public class Parser {
                 text = parts[1];
             }
             switch (command) {
-                case "list":
+            case "list":
                     if (storage.size()>0) System.out.println(storage);
                     else System.out.println("it's empty... what do u want me to list? :(");
                     break;
@@ -56,7 +56,7 @@ public class Parser {
                         System.out.println("it has to be from 1 to " + storage.size());
                     }
                     break;
-                case "todo":
+                    case "todo":
                     if(!text.isEmpty()){
                         storage.todo(text);
                         System.out.println("Added " + '\"'+ text + "\"" + " as a new task I guess");
