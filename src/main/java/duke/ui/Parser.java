@@ -3,8 +3,15 @@ package duke.ui;
 import duke.Tasks.Storage;
 
 import java.util.Scanner;
-
+/**
+ * The main driver class of the chatbot, called by notGPT
+ */
 public class Parser {
+    /**
+     * Runs the entire program, reading user input and deciding what to do
+     *
+     * @param scanner system input from command line
+     */
     public static void parse(Scanner scanner) {
         Storage storage = new Storage();
         String command;
