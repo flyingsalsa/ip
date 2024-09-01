@@ -79,6 +79,19 @@ public class Storage {
         store.remove(i-1);
         this.writeToFile();
     }
+    public String find(String s) {
+        String thing = "";
+        int j = 1;
+        for(int i = 0; i<store.size(); i++){
+
+            thing += j + ". " + store.get(i).toString();
+            if (i != store.size()-1) {
+                thing += "\n";
+            }
+            j++;
+        }
+        return thing;
+    }
     public int size() {
         return store.size();
     }
