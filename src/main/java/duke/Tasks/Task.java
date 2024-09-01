@@ -1,6 +1,6 @@
 package duke.Tasks;
 public class Task {
-    private String task;
+    public String task;
     private boolean done;
 
 
