@@ -83,14 +83,12 @@ public class Storage {
         String thing = "";
         int j = 1;
         for(int i = 0; i<store.size(); i++){
-
-            thing += j + ". " + store.get(i).toString();
-            if (i != store.size()-1) {
-                thing += "\n";
+            if (store.get(i).task.contains(s)) {
+                thing += j + ". " + store.get(i).toString() + "\n";
+                j++;
             }
-            j++;
         }
-        return thing;
+        return thing.trim();
     }
     public int size() {
         return store.size();
