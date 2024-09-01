@@ -7,7 +7,9 @@ import java.io.PrintWriter;
 
 
 public class Notgpt {
-
+    /**
+     * Creates a line break between commands
+     */
     public static void lnDiv() {
         System.out.println("___________________________________________________________________________");
     }
